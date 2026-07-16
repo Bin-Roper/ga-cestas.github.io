@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GA Rogério Cestas Básicas</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5efe6;
+    color: #3b2a1a;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(#6b3e1d, #3b2a1a);
+    color: white;
+}
+
+header img {
+    width: 120px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.frase {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #6b3e1d;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8b5a2b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- COLOQUE AQUI SUA LOGO -->
+    <img src="SUA_LOGO_AQUI.png">
+    <h1>GA Rogério Cestas Básicas</h1>
+    <div class="frase">
+        Deus abençoe o pão de cada dia e todo alimento dessa casa
+    </div>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h2>Cesta Doação 01</h2>
+            <p>9 itens essenciais</p>
+            <div class="price">R$ 50,00</div>
+            <button onclick="window.location.href='https://wa.me/5516991795522'">
+                Pedir no WhatsApp
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Cesta Doação 02</h2>
+            <p>10 itens</p>
+            <div class="price">R$ 70,00</div>
+            <button onclick="window.location.href='https://wa.me/5516991795522'">
+                Pedir no WhatsApp
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Cesta Doação 03</h2>
+            <p>11 itens</p>
+            <div class="price">R$ 100,00</div>
+            <button onclick="window.location.href='https://wa.me/5516991795522'">
+                Pedir no WhatsApp
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Cesta Família</h2>
+            <p>Completa para o mês</p>
+            <div class="price">R$ 200,00</div>
+            <button onclick="window.location.href='https://wa.me/5516991795522'">
+                Pedir no WhatsApp
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
