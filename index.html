@@ -10,127 +10,120 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f5efe6;
-    color: #3b2a1a;
-}
-
-header {
     text-align: center;
-    padding: 30px 20px;
-    background: linear-gradient(#6b3e1d, #3b2a1a);
-    color: white;
-}
-
-header img {
-    width: 120px;
-}
-
-h1 {
-    margin: 10px 0;
-}
-
-.frase {
-    font-style: italic;
-    margin-top: 10px;
 }
 
 .container {
-    padding: 20px;
+    position: relative;
     max-width: 1000px;
     margin: auto;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card h2 {
-    margin: 0;
-}
-
-.price {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-button {
+img {
     width: 100%;
-    padding: 10px;
-    border: none;
-    background: #6b3e1d;
-    color: white;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+    height: auto;
 }
 
-button:hover {
-    background: #8b5a2b;
+/* TEXTO CHAMATIVO */
+.aviso {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcc00;
+    color: #3b2a1a;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: pulseText 1.5s infinite;
 }
+
+@keyframes pulseText {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.1); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+/* ÁREAS CLICÁVEIS GRANDES */
+.link {
+    position: absolute;
+    top: 35%;
+    width: 20%;
+    height: 60%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFEITO VISUAL */
+.link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    transform: scale(1.02);
+}
+
+/* POSIÇÕES */
+.c1 { left: 5%; }
+.c2 { left: 27%; }
+.c3 { left: 49%; }
+.c4 { left: 71%; }
+
+/* BOTÃO FLUTUANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-    <!-- COLOQUE AQUI SUA LOGO -->
-    <img src="SUA_LOGO_AQUI.png">
-    <h1>GA Rogério Cestas Básicas</h1>
-    <div class="frase">
-        Deus abençoe o pão de cada dia e todo alimento dessa casa
-    </div>
-</header>
-
 <div class="container">
-    <div class="grid">
 
-        <div class="card">
-            <h2>Cesta Doação 01</h2>
-            <p>9 itens essenciais</p>
-            <div class="price">R$ 50,00</div>
-            <button onclick="window.location.href='https://wa.me/5516991795522'">
-                Pedir no WhatsApp
-            </button>
-        </div>
-
-        <div class="card">
-            <h2>Cesta Doação 02</h2>
-            <p>10 itens</p>
-            <div class="price">R$ 70,00</div>
-            <button onclick="window.location.href='https://wa.me/5516991795522'">
-                Pedir no WhatsApp
-            </button>
-        </div>
-
-        <div class="card">
-            <h2>Cesta Doação 03</h2>
-            <p>11 itens</p>
-            <div class="price">R$ 100,00</div>
-            <button onclick="window.location.href='https://wa.me/5516991795522'">
-                Pedir no WhatsApp
-            </button>
-        </div>
-
-        <div class="card">
-            <h2>Cesta Família</h2>
-            <p>Completa para o mês</p>
-            <div class="price">R$ 200,00</div>
-            <button onclick="window.location.href='https://wa.me/5516991795522'">
-                Pedir no WhatsApp
-            </button>
-        </div>
-
+    <!-- TEXTO -->
+    <div class="aviso">
+        👇 Clique na cesta para pedir pelo WhatsApp
     </div>
+
+    <!-- IMAGEM -->
+    <img src="cardapio.png" alt="Cestas básicas">
+
+    <!-- LINKS -->
+    <a class="link c1" href="https://wa.me/5516991795522?text=Olá,%20quero%20a%20Cesta%20Doação%2001"></a>
+
+    <a class="link c2" href="https://wa.me/5516991795522?text=Olá,%20quero%20a%20Cesta%20Doação%2002"></a>
+
+    <a class="link c3" href="https://wa.me/5516991795522?text=Olá,%20quero%20a%20Cesta%20Doação%2003"></a>
+
+    <a class="link c4" href="https://wa.me/5516991795522?text=Olá,%20quero%20a%20Cesta%20Família"></a>
+
 </div>
+
+<!-- BOTÃO FLUTUANTE -->
+<a class="whatsapp-float" href="https://wa.me/5516991795522" target="_blank">
+    💬
+</a>
 
 </body>
 </html>
