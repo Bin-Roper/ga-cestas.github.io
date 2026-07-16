@@ -74,18 +74,21 @@ img {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25d366;
-    color: white;
-    font-size: 28px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    background: #25d366;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     animation: pulse 1.5s infinite;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+
 }
 
 @keyframes pulse {
@@ -122,7 +125,7 @@ img {
 
 <!-- BOTÃO FLUTUANTE -->
 <a class="whatsapp-float" href="https://wa.me/5516991795522" target="_blank">
-    💬
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
 </body>
